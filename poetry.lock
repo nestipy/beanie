@@ -539,14 +539,25 @@ test = ["aiohttp (!=3.8.6)", "mockupdb", "motor[encryption]", "pytest (>=7)", "t
 zstd = ["pymongo[zstd] (>=4.5,<5)"]
 
 [[package]]
+name = "multipart"
+version = "0.2.5"
+description = "Parser for multipart/form-data."
+optional = false
+python-versions = ">=3.5"
+files = [
+    {file = "multipart-0.2.5-py3-none-any.whl", hash = "sha256:96352d67fa1f704e2bcbec9726d7fb316533bd010f0c66639f930fb59b734931"},
+    {file = "multipart-0.2.5.tar.gz", hash = "sha256:fa98838d40c967bb19589626a0fb8a5c40c421dda2febe1b0351fcf626e24651"},
+]
+
+[[package]]
 name = "nestipy"
-version = "0.3.7"
+version = "0.3.12"
 description = "Nestipy is a Python framework built on top of BlackSheep that follows the modular architecture of NestJS"
 optional = false
 python-versions = "<4.0,>=3.10"
 files = [
-    {file = "nestipy-0.3.7-py3-none-any.whl", hash = "sha256:288ac6d704fe0aab9e016bff560edf7998d415d950bfb6fc97b0b1511a241396"},
-    {file = "nestipy-0.3.7.tar.gz", hash = "sha256:126cb494e0d8ee26807b2791be107d27efd3514f56b243b006e94f2ae3a201e2"},
+    {file = "nestipy-0.3.12-py3-none-any.whl", hash = "sha256:2474ccdfb0a1c7f55e895323baf17880a056efabcb88ae4987c3da91c2a331b0"},
+    {file = "nestipy-0.3.12.tar.gz", hash = "sha256:cec57100d52dc04da0f159a86cf5aeea5a235aca2a88f6405c2cc4ce918377ff"},
 ]
 
 [package.dependencies]
@@ -554,12 +565,14 @@ aiofiles = ">=23.2.1,<24.0.0"
 blacksheep = ">=2.0.7,<3.0.0"
 fastapi = ">=0.110.0,<0.111.0"
 minijinja = ">=2.0.1,<3.0.0"
+multipart = ">=0.2.4,<0.3.0"
 pyee = ">=11.1.0,<12.0.0"
+python-multipart = ">=0.0.9,<0.0.10"
 python-socketio = ">=5.11.1,<6.0.0"
 snakecase = ">=1.0.1,<2.0.0"
 strawberry-graphql = ">=0.225.0,<0.226.0"
 ujson = ">=5.9.0,<6.0.0"
-uvicorn = {version = ">=0.29.0,<0.30.0", extras = ["standard"]}
+uvicorn = {version = ">=0.30.0,<0.31.0", extras = ["standard"]}
 
 [[package]]
 name = "pydantic"
@@ -815,6 +828,20 @@ simple-websocket = ">=0.10.0"
 asyncio-client = ["aiohttp (>=3.4)"]
 client = ["requests (>=2.21.0)", "websocket-client (>=0.54.0)"]
 docs = ["sphinx"]
+
+[[package]]
+name = "python-multipart"
+version = "0.0.9"
+description = "A streaming multipart parser for Python"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "python_multipart-0.0.9-py3-none-any.whl", hash = "sha256:97ca7b8ea7b05f977dc3849c3ba99d51689822fab725c3703af7c866a0c2b215"},
+    {file = "python_multipart-0.0.9.tar.gz", hash = "sha256:03f54688c663f1b7977105f021043b0793151e4cb1c1a9d4a11fc13d622c4026"},
+]
+
+[package.extras]
+dev = ["atomicwrites (==1.4.1)", "attrs (==23.2.0)", "coverage (==7.4.1)", "hatch", "invoke (==2.2.0)", "more-itertools (==10.2.0)", "pbr (==6.0.0)", "pluggy (==1.4.0)", "py (==1.11.0)", "pytest (==8.0.0)", "pytest-cov (==4.1.0)", "pytest-timeout (==2.2.0)", "pyyaml (==6.0.1)", "ruff (==0.2.1)"]
 
 [[package]]
 name = "python-socketio"
@@ -1119,13 +1146,13 @@ files = [
 
 [[package]]
 name = "uvicorn"
-version = "0.29.0"
+version = "0.30.1"
 description = "The lightning-fast ASGI server."
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "uvicorn-0.29.0-py3-none-any.whl", hash = "sha256:2c2aac7ff4f4365c206fd773a39bf4ebd1047c238f8b8268ad996829323473de"},
-    {file = "uvicorn-0.29.0.tar.gz", hash = "sha256:6a69214c0b6a087462412670b3ef21224fa48cae0e452b5883e8e8bdfdd11dd0"},
+    {file = "uvicorn-0.30.1-py3-none-any.whl", hash = "sha256:cd17daa7f3b9d7a24de3617820e634d0933b69eed8e33a516071174427238c81"},
+    {file = "uvicorn-0.30.1.tar.gz", hash = "sha256:d46cd8e0fd80240baffbcd9ec1012a712938754afcf81bce56c024c1656aece8"},
 ]
 
 [package.dependencies]
