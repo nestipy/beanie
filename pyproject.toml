@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "nestipy-beanie"
-version = "0.1.1"
+version = "0.1.2"
 description = ""
 authors = ["tsiresymila <tsiresymila@gmail.com>"]
 readme = "README.md"
@@ -8,7 +8,6 @@ packages = [{include = "nestipy_beanie", from = "src"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
-nestipy = "^0.3.7"
 beanie = "^1.26.0"
 
 
